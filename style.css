@@ -71,13 +71,13 @@ header{
     left: 0; /* Asegura que comience desde la izquierda */
 } 
 
-.Carrito{
-    align-items: center;
-    display: inline-flex;
-    justify-content: center;
-    padding: 10px 25px;
-    background-color: #F6A831;
+.btnCarrito{
+    width: 100px;
+    height: 45px;
+    background: #F6A831;
+    border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 
 .Carrito img{
@@ -86,8 +86,16 @@ header{
     margin-left: 7px;
 }
 
-.Carrito:hover{
-    color: white;
+.btnCarrito img:hover{
+    transform: translateX(60px);
+    transition: 1.2s;
+}
+
+.btnCarrito:hover{
+    transform: translateY(-2px); /* Mueve el botón hacia arriba */
+    box-shadow: 0 8px 15px rgba(161, 161, 161, 0.616); /* Agrega una sombra suave */
+    background-color:#F6A831;
+    transition: 1.2s;
 }
 
 
