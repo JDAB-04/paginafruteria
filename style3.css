@@ -4,7 +4,7 @@ html, body {
 }
 
 body{
-    text-align: center;
+    
     margin: 0;
     background-color:rgb(255, 255, 255);
     flex-wrap: wrap;
@@ -89,7 +89,7 @@ header{
     font-size: 50px;
     text-align: left;
     margin-left: 25px ;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
 }
 
 nav a{
@@ -104,4 +104,61 @@ nav a:hover{
     position: relative;
     left: 38%;
     width: 40%;
+}
+.parrafo1{
+    position: relative;
+    left: 35%;
+    width: 40%;
+}
+.contenedor1 {
+    display: flex;
+    justify-content: space-between; /* Espacio entre las imágenes */
+    padding: 50px;
+   position: relative;
+   top:1%;
+   height: 50%;
+}
+
+.secundario {
+    display: flex;
+    gap: 10%; 
+    position: relative;
+    top:1%;
+    left: 15%;
+   
+}
+
+.secundario div {
+    border: 5px solid #fff; /* Borde blanco como el de fotos antiguas */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle efecto de foto */
+    background-color: #f4f4f4; /* Fondo para simular papel de foto */
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+}
+.contenedor1 .secundario img {
+    display: block;
+    width: 500px; /* Puedes ajustar el tamaño de las imágenes */
+    height: auto;
+    border-radius: 5px;
+}
+
+.contenedor1 .secundario img:hover {
+    transition: .7s ease;
+    filter: brightness(100%);
+    transform: scale(1.2);
+}
+.Dmanzanas,.Dbanano,.pe{
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    color:#3366CC;
+    font-size: 34px;
+}
+.textoQ,.textoH,.textoPe{
+    display: block;
+    font-size: 12px;
+    margin-top: 10px;
+    text-align: center;
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
 }
