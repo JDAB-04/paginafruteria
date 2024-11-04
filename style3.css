@@ -89,6 +89,7 @@ header{
     font-size: 50px;
     text-align: left;
     margin-left: 25px ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 nav a{
@@ -99,4 +100,8 @@ nav a{
 nav a:hover{
     color: #f6a831 ;
 }
-
+.Titulo{
+    position: relative;
+    left: 38%;
+    width: 40%;
+}
