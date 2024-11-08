@@ -110,55 +110,93 @@ nav a:hover{
     left: 35%;
     width: 40%;
 }
+
 .contenedor1 {
     display: flex;
-    justify-content: space-between; /* Espacio entre las imágenes */
-    padding: 50px;
-   position: relative;
-   top:1%;
-   height: 54%;
+    justify-content: center;
+    padding: 20px;
+    position: relative;
+    top: 1%;
+    height: auto;
 }
+
 
 .secundario {
-    display: flex;
-    gap: 10%; 
-    position: relative;
-    top:1%;
-    left: 20%;
-   
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 20px;
 }
 
+
 .secundario div {
-    border: 5px solid #fff; /* Borde blanco como el de fotos antiguas */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Sombra para darle efecto de foto */
-    background-color: #f4f4f4; /* Fondo para simular papel de foto */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 5px solid #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #f4f4f4;
     padding: 10px;
     border-radius: 5px;
     overflow: hidden;
+    max-width: 450px;
+    min-height: 200px; /* Establece una altura mínima uniforme */
 }
+
 .contenedor1 .secundario img {
-    display: block;
-    width: 450px; /* Puedes ajustar el tamaño de las imágenes */
-    height: auto;
+    width: 100%;
+    height: 200px; /* Establece una altura fija para las imágenes */
+    object-fit: cover; /* Ajusta la imagen para que ocupe el contenedor sin deformarse */
     border-radius: 5px;
 }
 
 .contenedor1 .secundario img:hover {
     transition: .7s ease;
     filter: brightness(100%);
-    transform: scale(1.2);
+    transform: scale(1.1);
 }
-.Dmanzanas,.Dbanano,.Dpera{
+
+.Dmanzanas, .Dbanano, .Dpera {
     display: block;
     text-align: center;
     text-decoration: none;
-    color:#3366CC;
-    font-size: 34px;
+    color: #3366CC;
+    font-size: 1.5rem;
 }
-.textoQ,.textoH,.textoPe{
+
+.textoQ, .textoH, .textoPe {
     display: block;
-    font-size: 12px;
+    font-size: 0.8rem;
     margin-top: 10px;
     text-align: center;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .secundario {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    }
+
+    .Dmanzanas, .Dbanano, .Dpera {
+        font-size: 1.2rem;
+    }
+
+    .textoQ, .textoH, .textoPe {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .secundario div {
+        padding: 8px;
+    }
+
+    .Dmanzanas, .Dbanano, .Dpera {
+        font-size: 1rem;
+    }
+
+    .textoQ, .textoH, .textoPe {
+        font-size: 0.6rem;
+    }
 }
