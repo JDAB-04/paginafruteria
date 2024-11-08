@@ -6,7 +6,7 @@ html, body {
 body{
     
     margin: 0;
-    background-color:rgb(255, 255, 255);
+    background-color:white;
     flex-wrap: wrap;
 }
 
@@ -113,63 +113,79 @@ nav a:hover{
 
 .contenedor1 {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra el contenido */
     padding: 20px;
-    position: relative;
-    top: 1%;
-    height: auto;
+    width: 70%; /* Ajusta el ancho según lo necesario */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+}
+.contenedor2{
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    padding: 20px;
+    width: 40%; /* Ajusta el ancho según lo necesario */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
 }
 
-
-.secundario {
+.secundario, .terciario {
     display: grid;
     grid-template-columns: repeat(2, 1fr); /* Dos columnas */
-    gap: 20px;
+    gap: 40px; /* Espacio entre columnas */
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+ 
 }
 
-
-.secundario div {
+.secundario div,.terciario div {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    border: 5px solid #fff;
+    border: 5px solid wheat;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #f4f4f4;
+    background-color: #fff;
     padding: 10px;
     border-radius: 5px;
     overflow: hidden;
     max-width: 450px;
     min-height: 200px; /* Establece una altura mínima uniforme */
+    margin-bottom: 50px; /* Espacio entre filas */
 }
 
-.contenedor1 .secundario img {
+
+.contenedor1 .secundario img,.contenedor2 .terciario img {
     width: 100%;
-    height: 200px; /* Establece una altura fija para las imágenes */
-    object-fit: cover; /* Ajusta la imagen para que ocupe el contenedor sin deformarse */
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta y ajusta la imagen para llenar el contenedor */
     border-radius: 5px;
+   
 }
+
 
 .contenedor1 .secundario img:hover {
     transition: .7s ease;
     filter: brightness(100%);
     transform: scale(1.1);
 }
+.contenedor2  .terciario img:hover{
+    transition: .7s ease;
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
 
-.Dmanzanas, .Dbanano, .Dpera {
+.Dmanzanas, .Dbanano, .Dpera,.Duvas {
     display: block;
     text-align: center;
     text-decoration: none;
     color: #3366CC;
     font-size: 1.5rem;
+    margin-top: 5px;
 }
 
 .textoQ, .textoH, .textoPe {
     display: block;
     font-size: 0.8rem;
-    margin-top: 10px;
-    text-align: center;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 2px;
 }
 
 /* Media Queries */
