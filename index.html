@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Frutería Dante</title>
+    <!--Se inserta un link de google fonts para la fuente Playfair-Display-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+    <!-- Se inserta un link de google fonts para la fuente NewsReader-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz@1,6..72&display=swap" rel="stylesheet">
+    <!--Se inserta un link de google fonts para la fuente Nanum-Myeongjo-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+    <!--Se une el hmtl con el css-->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <!-- Se crea el header de la pagina -->
+    <header>
+      <a href="index.html" class="logo">
+        <img
+          src="imagenes/LOGOfRUTERIA-removebg-preview.png"alt="Logo de la pagina"
+        />
+        <h2 class="Nombre empresa">Frutería Dante</h2>
+      </a>
+      <!-- Se crea un nav que contiene los link a las otras secciones -->
+      <nav>
+        <a href="products.html" class="nav-link">Productos</a>
+        <a href="#quienes-somos" class="nav-link">Quiénes Somos</a>
+        <a href="#Contactanos" class="nav-link">Contacto</a>
+        <button class="btnCarrito"><img src="imagenes/carrito.png" alt="iconocarrito" /></button>
+        </a>
+      </nav>
+    </header>
+
+    <p>
+      Todos nuestros productos están hechos con frutas de la mejor calidad<br />
+      siempre frescos y traidos directamente del campo, atrevete a probar<br />
+      una nueva experiencia de sabor con nosotros.
+    </p>
+    <!-- Se crea un boton que dirige a google maps -->
+    <a href="https://maps.google.com" target="_blank" class="ubicacion">
+      ¿Cómo llegar?
+      <img src="imagenes/logoubicacion.png" alt="Logo Boton Ubicacion" />
+    </a>
+    <!-- Contenedor para las 3 imagenes de referencia de la fruteria -->
+    <div class="Contenedor">
+      <img
+        src="imagenes/DALL·E 2024-08-19 17.03.20 - A vibrant fruit shop called 'Frutería Dante' where fresh fruit salads are sold. The shop has a rustic, cozy feel with wooden shelves filled with a var.webp"
+        alt="Imgen Fruteria Dante"/>
+      <img src="imagenes/FRUTERIA.png" alt="Imagen Fruteria Dante">
+      <img src="imagenes/Fruteria2.png" alt="Imagen Fruteria Dante">
+      <!-- Descripcion -->
+      <h2 id="quienes-somos">¿Quiénes Somos?</h2>
+      <p>
+        Frutería Dante es un emprendimiento creado por 3 estudiantes de
+        Ingeniería de Software, con la finalidad de <br />
+        generar un ingreso extra y poder cubrir sus gastos diarios, asi mismo se
+        pensó en aquellos que deciden dar su voto de confianza y se atreven a
+        probar nuestros productos, los cuales estan hechos con la más alta
+        calidad en cuanto a fruteria se refiere, y sin duda alguna endulzarán el
+        corazón de los colombianos.
+      </p>
+    </div>
+    <!-- Contenedor de las cartas de presentacion -->
+    <div class="card-container">
+      <div class="card">
+        <div class="head">
+          <div class="circle">
+            <div class="img">
+              <img src="imagenes/ftoJulian.png.jpg" alt="ftoJulian" />
+            </div>
+          </div>
+        </div>
+
+        <div class="description">
+          <h3>Julian Alvarado</h3>
+          <h4>Ing. de Software</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+            reiciendis?
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="head">
+          <div class="circle">
+            <div class="img">
+              <img src="imagenes/ftoEsteban.png.jpg" alt="ftoEsteban" />
+            </div>
+          </div>
+        </div>
+
+        <div class="description">
+          <h3>Esteban Leal</h3>
+          <h4>Ing. de Software</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+            reiciendis?
+          </p>
+        </div>
+      </div>
+
+      <div class="card">
+        <div class="head">
+          <div class="circle">
+            <div class="img">
+              <img src="imagenes/ftoDanilo.png.jpg" alt="ftoDanilo" />
+            </div>
+          </div>
+        </div>
+
+        <div class="description">
+          <h3>Danilo Garcia</h3>
+          <h4>Ing. de Software</h4>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Accusamus,
+            reiciendis?
+          </p>
+        </div>
+      </div>
+    </div>
+    <!-- Descripcion de contacto -->
+    <div class="Contacto">
+      <h2 id="Contactanos">Contáctanos</h2>
+      <p> En este espacio encontrarás todos los medios para comunicarte con nuestro equipo.</p>
+      <!-- div en el que se pone las imagenes de los medios de contacto -->
+      <div class="contact-info">
+        <div class="contact-item">
+          <img src="imagenes/icons8-phone-32.png" alt="Teléfono" />
+          <p>12345678977</p>
+        </div>
+        <div class="contact-item">
+          <img src="imagenes/icons8-gmail-16.png" alt="Gmail" />
+          <a href="https://acortar.link/eChhth" target="_blank">Gmail</a>
+        </div>
+        <div class="contact-item">
+          <img src="imagenes/icons8-instagram-16.png" alt="Instagram" />
+          <a href="https://www.instagram.com/" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
