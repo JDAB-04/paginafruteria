@@ -192,6 +192,26 @@ nav a:hover{
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     margin-top: -3px !important; /* Margin negativo para acercarlo aún más */
 }
+.botonFinal {
+    display: flex; /* Agregamos flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #f6a831;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #c28a37; /* Efecto hover */
+  }
 .footer {
     background-color:#F6A831; /* Fondo del footer */
 
