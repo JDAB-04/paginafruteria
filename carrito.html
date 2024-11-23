@@ -1,47 +1,118 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Carrito</title>
-    <!--Se inserta un link de google fonts para la fuente Playfair-Display-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <!-- Se inserta un link de google fonts para la fuente NewsReader-->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
-    <!--Se une el hmtl con el css-->
-    <link rel="stylesheet" href="style3.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrito</title>
+  <!--Se inserta un link de google fonts para la fuente Playfair-Display-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,500&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <!-- Se inserta un link de google fonts para la fuente NewsReader-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Nanum+Myeongjo:wght@400;700;800&display=swap" rel="stylesheet">
+  <!--Se une el hmtl con el css-->
+  <link rel="stylesheet" href="style3.css">
 </head>
 
 <body>
-    <!-- Se crea el header de la pagina -->
-    <header>
-        <a href="index.html" class="logo">
-            <img
-              src="imagenes/LOGOfRUTERIA-removebg-preview.png"
-              alt="Logo de la pagina"
-            />
-            <h2 class="Nombre empresa">Frutería Dante</h2>
-          </a>
-          <!-- Se crea un nav que contiene los link a las otras secciones -->
-          <nav>
-            <a
-              href="products.html" class="nav-link" title="Conoce nuestros productos">Productos</a
-            >
-            <a href="index.html" class="nav-link">Quiénes Somos</a>
-            <a href="index.html" class="nav-link">Contacto</a>
-            <a href="carrito.html" class="Carrito">Carrito<img src="imagenes/iconocarrito.png" alt="iconocarrito" />
-            </a>
-          </nav>
-    </header>
+  <!-- Se crea el header de la pagina -->
+  <header>
+    <a href="index.html" class="logo">
+      <img src="imagenes/LOGOfRUTERIA-removebg-preview.png" alt="Logo de la pagina" />
+      <h2 class="Nombre empresa">Frutería Dante</h2>
+    </a>
+    <!-- Se crea un nav que contiene los link a las otras secciones -->
+    <nav>
+      <a href="products.html" class="nav-link" title="Conoce nuestros productos">Productos</a>
+      <a href="index.html" class="nav-link">Quiénes Somos</a>
+      <a href="index.html" class="nav-link">Contacto</a>
+      <a href="carrito.html" class="Carrito">Carrito<img src="imagenes/carrito.png" alt="iconocarrito" />
+      </a>
+    </nav>
+  </header>
 
-    <div class="Titulo">
-        <h1>Carrito de compras</h1>
+  <div class="Titulo">
+    <h1>Carrito de compras</h1>
+  </div>
+  <div class="parrafo1">
+    <span class="dentro">En este espacio podras ver las cosas que deseas adquirir o cosas para comprar mas tarde </span>
+  </div>
+  <br>
+  <!-- Sección de lista de productos -->
+  <div class="contenedor1">
+    <div class="secundario">
+      <!-- Sección Manzanas -->
+      <div class="uno">
+        <div class="man">
+          <img src="imagenes/manzana.jpg" class="imgqmanzana" alt="Imagen de manzana">
+        </div>
+
+        <!-- Descripción Manzanas -->
+        <a class="Dmanzanas">
+          <strong>Manzanas</strong>
+        </a>
+        <span class="textoQ">Precio por unidad: 1.00</span>
+       
+        <label>unidades: 3</label>
+        <br>
+
+      </div>
+      <!-- Sección Banano -->
+      <div class="dos">
+        <div class="ban">
+          <img src="/paginafruteria/imagenes/banano.jpg" class="imgqbanano" alt="Imagen de banano">
+        </div>
+
+        <!-- Descripción Banano -->
+        <a class="Dbanano">
+          <strong>Banano</strong>
+        </a>
+        <span class="textoH">Precio por unidad: 0.50</span>
+        <label>unidades: 1</label>
+      </div>
     </div>
-    
+  </div>
+
+  <div class="contenedor2">
+    <div class="terciario">
+      <!-- Sección Peras -->
+      <div class="uno">
+        <div class="pera">
+          <img src="imagenes/peras.jpg" class="imgpera" alt="Imagen de pera">
+        </div>
+
+        <!-- Descripción Peras -->
+        <a class="Dpera">
+          <strong>Peras</strong>
+        </a>
+        <span class="textoQ">Precio por unidad: 1.20</span>
+        <label>unidades: 2</label>
+      </div>
+      <!-- Sección Uvas -->
+      <div class="dos">
+        <div class="uva">
+          <img src="imagenes/uvas.jpg" class="imgquvas" alt="Imagen de uvas">
+        </div>
+
+        <a class="Duvas">
+          <strong>Uvas</strong>
+        </a>
+        <span class="textoH">Precio por unidad: 2.00</span>
+        <label>unidades: 4</label>
+      </div>
+    </div>
+  </div>
+  <div class="botonFinal">
+    <button>finalizar compra</button>
+  </div>
+  <br>
+  <footer class="footer">
+
+  </footer>
 </body>
+
 </html>

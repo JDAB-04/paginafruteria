@@ -4,9 +4,9 @@ html, body {
 }
 
 body{
-    text-align: center;
+    
     margin: 0;
-    background-color:rgb(255, 255, 255);
+    background-color:white;
     flex-wrap: wrap;
 }
 
@@ -89,6 +89,7 @@ header{
     font-size: 50px;
     text-align: left;
     margin-left: 25px ;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);    
 }
 
 nav a{
@@ -98,4 +99,154 @@ nav a{
  
 nav a:hover{
     color: #f6a831 ;
+}
+.Titulo{
+    position: relative;
+    left: 38%;
+    width: 40%;
+}
+.parrafo1{
+    position: relative;
+    left: 35%;
+    width: 40%;
+}
+
+.contenedor1 {
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    padding: 20px;
+    width: 70%; /* Ajusta el ancho según lo necesario */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+}
+.contenedor2{
+    display: flex;
+    justify-content: center; /* Centra el contenido */
+    padding: 20px;
+    width: 65%; /* Ajusta el ancho según lo necesario */
+    margin: 0 auto; /* Centra el contenedor en la pantalla */
+}
+
+.secundario, .terciario {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Dos columnas */
+    gap: 40px; /* Espacio entre columnas */
+    background-color: rgba(255, 255, 255, 0.1);
+    text-align: center;
+ 
+}
+
+.secundario div,.terciario div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    border: 5px solid wheat;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 450px;
+    min-height: 200px; /* Establece una altura mínima uniforme */
+    margin-bottom: 50px; /* Espacio entre filas */
+}
+
+
+.contenedor1 .secundario img,.contenedor2 .terciario img {
+    width: 100%;
+    height: 200px; /* Altura fija para las imágenes */
+    object-fit: cover; /* Recorta y ajusta la imagen para llenar el contenedor */
+    border-radius: 5px;
+   
+}
+
+
+.contenedor1 .secundario img:hover {
+    transition: .7s ease;
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
+.contenedor2  .terciario img:hover{
+    transition: .7s ease;
+    filter: brightness(100%);
+    transform: scale(1.1);
+}
+
+/* Asegúrate de que los contenedores de las imágenes no tengan padding ni margen */
+.man, .ban, .pera, .uva {
+    padding: 0;
+    margin: 0;
+}
+
+/* Reducir el margen superior del texto */
+.Dmanzanas, .Dbanano, .Dpera, .Duvas {
+    text-decoration: none;
+    color: #3366CC;
+    font-size: 1.5rem;
+    margin-top: -5px !important; /* Margin negativo para acercarlo más */
+}
+
+/* Ajuste del texto de precio */
+.textoQ, .textoH, .textoPe {
+    font-size: 0.8rem;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: -3px !important; /* Margin negativo para acercarlo aún más */
+}
+.botonFinal {
+    display: flex; /* Agregamos flexbox */
+    justify-content: center; /* Centra horizontalmente */
+    align-items: center; /* Centra verticalmente */
+
+  }
+
+  button {
+    padding: 10px 20px;
+    font-size: 16px;
+    border: none;
+    background-color: #f6a831;
+    color: white;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+
+  button:hover {
+    background-color: #c28a37; /* Efecto hover */
+  }
+.footer {
+    background-color:#F6A831; /* Fondo del footer */
+
+    padding: 20px 0; /* Espaciado arriba y abajo */
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+
+/* Media Queries */
+@media (max-width: 768px) {
+    .secundario,.terciario {
+        grid-template-columns: 1fr; /* Cambia a una columna en pantallas pequeñas */
+    }
+
+    .Dmanzanas, .Dbanano, .Dpera,.Duvas {
+        font-size: 1.2rem;
+    }
+
+    .textoQ, .textoH, .textoPe {
+        font-size: 0.7rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .secundario div,.terciario div {
+        padding: 8px;
+    }
+
+    .Dmanzanas, .Dbanano, .Dpera,.Duvas {
+        font-size: 1rem;
+    }
+
+    .textoQ, .textoH, .textoPe {
+        font-size: 0.6rem;
+    }
 }
